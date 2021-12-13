@@ -21,3 +21,7 @@ Ecommerce-Django-backend
   
 ## Run Application
 cd backend/manage.py runserver
+
+## To create tables
+python manage.py makemigrations
+python manage.py migrate
