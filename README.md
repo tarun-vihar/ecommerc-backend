@@ -1,2 +1,2 @@
-# ecommerc-backend
+# ecommerce-backend
 Ecommerce-Django-backend
