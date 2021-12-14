@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-$x7(4d26ocj3#xq(-ix%raim5i95j94fn=##+p0iup@$+i+yca
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'react-ecommerce-pro.herokuapp.com',
-'344d-2603-8000-9a00-3d97-ac82-572f-4def-fd6f.ngrok.io'
+'344d-2603-8000-9a00-3d97-ac82-572f-4def-fd6f.ngrok.io', '18.220.232.251'
 ]
 
 
