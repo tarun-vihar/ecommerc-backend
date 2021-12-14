@@ -4,6 +4,7 @@
 sleep 5
 echo "Django Configuration"
 
+source dev.env
 # prepare init migration
 echo "prepare init migration"
 

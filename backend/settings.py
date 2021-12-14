@@ -143,13 +143,21 @@ DATABASES = {
     #     'HOST': 'localhost',
     #     'PORT':'5432'
     # }
-     'default': {
+    #  'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'ecommerce',
+    #     'USER': 'tarun',
+    #     'PASSWORD': os.environ.get('DB_PASS'),
+    #     'HOST': 'ecommerce-backend.cwsuxthy5q3k.us-east-2.rds.amazonaws.com',
+    #     'PORT':'5432'
+    # }
+      'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecommerce',
-        'USER': 'tarun',
-        'PASSWORD': os.environ.get('DB_PASS'),
-        'HOST': 'ecommerce-backend.cwsuxthy5q3k.us-east-2.rds.amazonaws.com',
-        'PORT':'5432'
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT')
     }
 }
 
@@ -212,7 +220,7 @@ AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_S3_ACCESS_KEY_ID = os.environ.get('AWS_S3_ACCESS_KEY_ID')
 AWS_S3_SECRET_ACCESS_KEY = os.environ.get('AWS_S3_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME ='ecommerce-bucket-csun-demo'
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
 
 if os.getcwd() == '/app':
