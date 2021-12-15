@@ -11,17 +11,15 @@ Ecommerce-Django-backend
  ## Clone the code
  
 ## Create Virtual Environment and Activate
- //python -m virtualenv virtualenv_name
-  
- source virtualenv_name/scripts/activate
+     python -m virtualenv virtualenv_name 
+     source virtualenv_name/scripts/activate
  
-## Install Application Requirements
+## Run the application
+  bash entrypoint.sh 
+ 
 
-  pip install -r ./requirements.txt
-  
-## Run Application
-cd backend/manage.py runserver
 
-## To create tables
-python manage.py makemigrations
-python manage.py migrate
+
+
+
+
